@@ -20,6 +20,7 @@ const services = [
       '24/7 intelligent assistants for sales, support, and lead capture — trained on your business, deployed on your website or WhatsApp.',
     image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=85&fit=crop',
     accent: '#007BFF',
+    href: 'https://vyzma.in/services/ai-chatbots',
   },
   {
     id: 'automation',
@@ -30,6 +31,7 @@ const services = [
       'End-to-end process automation that eliminates manual work. Connect your CRM, tools, and data into one autonomous pipeline.',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=85&fit=crop',
     accent: '#007BFF',
+    href: 'https://vyzma.in/services/ai-automation',
   },
   {
     id: 'aeo',
@@ -40,6 +42,7 @@ const services = [
       'Rank on Google, appear in ChatGPT and Perplexity answers, and dominate local search — three strategies, one integrated system.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=85&fit=crop',
     accent: '#007BFF',
+    href: 'https://vyzma.in/services/seo-aeo-geo',
   },
   {
     id: 'voice',
@@ -50,6 +53,7 @@ const services = [
       'AI voice agents that make and receive calls — follow up with leads, confirm appointments, handle FAQs. Sounds human. Works better.',
     image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=85&fit=crop',
     accent: '#007BFF',
+    href: '#contact',
   },
   {
     id: 'custom',
@@ -60,6 +64,7 @@ const services = [
       'Purpose-built AI for your exact operations — fine-tuned models, RAG systems, proprietary data pipelines, custom dashboards.',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=85&fit=crop',
     accent: '#007BFF',
+    href: '#contact',
   },
   {
     id: 'web',
@@ -70,6 +75,29 @@ const services = [
       'Fast, conversion-focused websites built to attract leads and support your AI systems from day one. Every pixel has a purpose.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=85&fit=crop',
     accent: '#007BFF',
+    href: 'https://vyzma.in/services/website-design',
+  },
+  {
+    id: 'google-ads',
+    num: '07',
+    tag: 'Performance Marketing',
+    title: 'Google Performance Ads',
+    summary:
+      'Search, Shopping, and YouTube campaigns where every rupee is tracked and every lead is scored. ROAS-driven, zero guesswork.',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=85&fit=crop',
+    accent: '#007BFF',
+    href: 'https://vyzma.in/services/google-ads',
+  },
+  {
+    id: 'meta-ads',
+    num: '08',
+    tag: 'Social Ads',
+    title: 'Meta Ads',
+    summary:
+      'Instagram + Facebook ad campaigns with AI-optimised creatives and targeting that actually converts — not just impressions.',
+    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=85&fit=crop',
+    accent: '#007BFF',
+    href: 'https://vyzma.in/services/meta-ads',
   },
 ];
 
@@ -197,7 +225,9 @@ export default function ServicesCarousel() {
                 className="pl-5 basis-[85%] sm:basis-[60%] md:basis-[42%] lg:basis-[33%]"
               >
                 <a
-                  href="#contact"
+                  href={svc.href ?? '#contact'}
+                  target={svc.href?.startsWith('http') ? '_blank' : undefined}
+                  rel={svc.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] hover:border-white/[0.15] hover:bg-white/[0.04] transition-all duration-300 cursor-pointer"
                   style={{ height: 380 }}
                   aria-label={svc.title}
