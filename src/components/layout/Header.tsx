@@ -28,6 +28,7 @@ import {
   MapPin,
   Handshake,
   Network,
+  BookOpen,
 } from 'lucide-react';
 
 type LinkItem = {
@@ -305,6 +306,12 @@ const serviceLinks: LinkItem[] = [
     href: '#contact',
     description: 'Connect your CRM, ERP & existing stack',
     icon: Network,
+  },
+  {
+    title: 'Vyzma PDF',
+    href: '#contact',
+    description: 'AI-powered service proposals & business reports',
+    icon: BookOpen,
   },
 ];
 
