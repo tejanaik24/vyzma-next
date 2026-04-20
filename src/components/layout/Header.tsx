@@ -309,7 +309,7 @@ const serviceLinks: LinkItem[] = [
   },
   {
     title: 'Vyzma PDF',
-    href: '#contact',
+    href: 'https://vyzma-pdf.vercel.app',
     description: 'AI-powered service proposals & business reports',
     icon: BookOpen,
   },
