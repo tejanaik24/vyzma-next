@@ -1,30 +1,43 @@
 import { MetadataRoute } from 'next';
+import { SERVICES } from './lib/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const now = new Date();
+  
+  const entries: MetadataRoute.Sitemap = [
     {
       url: 'https://vyzma.in',
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,
     },
-    {
-      url: 'https://vyzma.in/#services',
-      lastModified: new Date(),
+  ];
+
+  // Add all service pages
+  for (const service of SERVICES) {
+    entries.push({
+      url: `https://vyzma.in/services/${service.slug}`,
+      lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+      priority: 0.9,
+    });
+  }
+
+  // Add static pages
+  entries.push(
     {
-      url: 'https://vyzma.in/#case-study',
-      lastModified: new Date(),
+      url: 'https://vyzma.in/about',
+      lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://vyzma.in/#locations',
-      lastModified: new Date(),
+      url: 'https://vyzma.in/contact',
+      lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-  ];
+      priority: 0.7,
+    }
+  );
+
+  return entries;
 }
