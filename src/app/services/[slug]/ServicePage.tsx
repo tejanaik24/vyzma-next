@@ -25,12 +25,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `/services/${slug}`,
     },
+    robots: "index, follow",
     openGraph: {
       title: `${service.title} — Vyzma AI`,
       description: service.summary,
       url: `https://vyzma.in/services/${slug}`,
       siteName: "Vyzma AI",
       type: "website",
+      images: [
+        {
+          url: `https://vyzma.in/og-${slug}.png`,
+          width: 1200,
+          height: 630,
+          alt: `${service.title} — Vyzma AI`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} — Vyzma AI`,
+      description: service.summary,
+      images: [`https://vyzma.in/og-${slug}.png`],
     },
   };
 }

@@ -61,6 +61,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  robots: "index, follow",
   openGraph: {
     title: "Vyzma AI — India's Premier AI Agency",
     description:
@@ -69,12 +70,21 @@ export const metadata: Metadata = {
     siteName: "Vyzma AI",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://vyzma.in/og-vyzma-homepage.png",
+        width: 1200,
+        height: 630,
+        alt: "Vyzma AI — AI Chatbots & Digital Marketing for Indian Businesses",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Vyzma AI — India's Premier AI Agency",
     description:
       "AI chatbots, workflow automation, answer engine optimisation, and R&D systems — built in India, competing globally.",
+    images: ["https://vyzma.in/og-vyzma-homepage.png"],
   },
 };
 
