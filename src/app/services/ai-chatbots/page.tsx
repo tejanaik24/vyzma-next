@@ -1,1 +1,1 @@
-export { default } from "../[slug]/ServicePage";
+export { default, generateMetadata, generateStaticParams } from "../[slug]/ServicePage";

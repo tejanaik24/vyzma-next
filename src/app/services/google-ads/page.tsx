@@ -1,2 +1,1 @@
-import ServicePage from "../[slug]/ServicePage";
-export default ServicePage;
+export { default, generateMetadata, generateStaticParams } from "../[slug]/ServicePage";
