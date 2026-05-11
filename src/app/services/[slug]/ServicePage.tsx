@@ -221,4 +221,4 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       <div className="px-6 pb-6 text-neutral-400">{answer}</div>
     </details>
   );
-}
+}// Force rebuild: Mon May 11 01:53:45 PDT 2026
