@@ -97,6 +97,22 @@ function renderContent(content: string) {
         </ListTag>
       );
     }
+    if (block.startsWith('![')) {
+      const match = block.match(/!\[(.+?)\]\((.+?)\)/);
+      if (match) {
+        return (
+          <div key={i} className="my-8 overflow-hidden rounded-lg border border-white/[0.08]">
+            <img
+              src={match[2]}
+              alt={match[1]}
+              className="w-full object-cover"
+              loading="lazy"
+            />
+            <p className="px-3 py-2 text-xs text-white/30 italic">{match[1]}</p>
+          </div>
+        );
+      }
+    }
     if (block.startsWith('[') && block.includes('](')) {
       const match = block.match(/\[(.+?)\]\((.+?)\)/);
       if (match) {
