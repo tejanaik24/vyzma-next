@@ -1,9 +1,10 @@
 import { MetadataRoute } from 'next';
 import { SERVICES } from './lib/services';
+import { BLOG_POSTS } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  
+
   const entries: MetadataRoute.Sitemap = [
     {
       url: 'https://vyzma.in',
@@ -11,9 +12,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    {
+      url: 'https://vyzma.in/blog',
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
   ];
 
-  // Add all service pages
+  for (const post of BLOG_POSTS) {
+    entries.push({
+      url: `https://vyzma.in/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    });
+  }
+
   for (const service of SERVICES) {
     entries.push({
       url: `https://vyzma.in/services/${service.slug}`,
@@ -23,7 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // Add static pages
   entries.push(
     {
       url: 'https://vyzma.in/about',

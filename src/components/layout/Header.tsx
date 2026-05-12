@@ -317,6 +317,12 @@ const serviceLinks: LinkItem[] = [
 
 const companyLinks: LinkItem[] = [
   {
+    title: 'Blog',
+    href: '/blog',
+    description: 'SEO, GEO, AEO & AI automation insights',
+    icon: BookOpen,
+  },
+  {
     title: 'About Vyzma AI',
     href: '#contact',
     description: 'Bangalore & Vizag — building intelligent systems',
