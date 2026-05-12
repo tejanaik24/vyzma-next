@@ -11,10 +11,23 @@ export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
+const BLOG_OG_IMAGES: Record<string, string> = {
+  'google-ai-hub-vizag-businesses-2026': '/og-blog-1.png',
+  'best-ai-agency-visakhapatnam-2026': '/og-blog-2.png',
+  'ai-automation-vizag-businesses-2026': '/og-blog-3.png',
+  'ai-chatbots-visakhapatnam-2026': '/og-blog-4.png',
+  'ai-for-real-estate-vizag-2026': '/og-blog-5.png',
+  'ai-for-pharma-companies-vizag-2026': '/og-blog-6.png',
+  'best-ai-agency-bangalore-2026': '/og-blog-7.png',
+  'digital-marketing-agency-visakhapatnam-2026': '/og-blog-8.png',
+  'seo-agency-visakhapatnam-2026': '/og-blog-9.png',
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+  const ogImage = BLOG_OG_IMAGES[slug];
   return {
     title: post.metaTitle,
     description: post.metaDescription,
@@ -24,6 +37,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       url: `https://vyzma.in/blog/${post.slug}`,
       type: 'article',
+      ...(ogImage && {
+        images: [{ url: `https://vyzma.in${ogImage}`, width: 1200, height: 630 }],
+      }),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      ...(ogImage && { images: [`https://vyzma.in${ogImage}`] }),
     },
   };
 }
