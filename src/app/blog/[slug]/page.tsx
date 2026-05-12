@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Vyzma AI Blog`,
-    description: post.excerpt,
+    title: post.metaTitle,
+    description: post.metaDescription,
     robots: 'index, follow',
     openGraph: {
       title: post.title,
@@ -53,16 +53,48 @@ function renderContent(content: string) {
         </h3>
       );
     }
-    if (block.startsWith('1. ') || block.startsWith('- ')) {
-      const items = block.split('\n').filter(Boolean);
+    if (block.includes('|') && block.includes('---')) {
+      const lines = block.split('\n').filter(Boolean);
+      const headers = lines[0].split('|').filter((c) => c.trim()).map((c) => c.trim());
+      const rows = lines.slice(2).map((line) =>
+        line.split('|').filter((c) => c.trim()).map((c) => c.trim())
+      );
       return (
-        <ul key={i} className="my-4 space-y-2 pl-4">
+        <div key={i} className="my-6 overflow-x-auto">
+          <table className="w-full border-collapse text-sm text-white/80">
+            <thead>
+              <tr className="border-b border-white/10">
+                {headers.map((h, j) => (
+                  <th key={j} className="px-3 py-2 text-left font-semibold text-white">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, j) => (
+                <tr key={j} className="border-b border-white/5">
+                  {row.map((cell, k) => (
+                    <td key={k} className="px-3 py-2 text-white/70">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+    if (block.startsWith('1. ') || block.startsWith('- ')) {
+      const isOrdered = block.startsWith('1. ');
+      const items = block.split('\n').filter(Boolean);
+      const ListTag = isOrdered ? 'ol' : 'ul';
+      const listClass = isOrdered ? 'list-decimal' : 'list-disc';
+      return (
+        <ListTag key={i} className={`my-4 space-y-2 pl-6 ${listClass}`}>
           {items.map((item, j) => (
-            <li key={j} className="text-white/70 leading-relaxed">
-              {'• ' + item.replace(/^[\d]+\. /, '').replace(/^- /, '')}
+            <li key={j} className="text-white/70 leading-relaxed pl-2">
+              {item.replace(/^[\d]+\. /, '').replace(/^- /, '')}
             </li>
           ))}
-        </ul>
+        </ListTag>
       );
     }
     if (block.startsWith('[') && block.includes('](')) {
@@ -114,12 +146,31 @@ export default async function BlogPostPage({ params }: Props) {
     url: `https://vyzma.in/blog/${post.slug}`,
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {post.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <main className="min-h-screen bg-black text-white">
         {/* Breadcrumb */}
         <div className="border-b border-white/[0.06] px-6 py-4 md:px-10">
