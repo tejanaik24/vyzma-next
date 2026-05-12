@@ -21,6 +21,10 @@ const BLOG_OG_IMAGES: Record<string, string> = {
   'best-ai-agency-bangalore-2026': '/og-blog-7.png',
   'digital-marketing-agency-visakhapatnam-2026': '/og-blog-8.png',
   'seo-agency-visakhapatnam-2026': '/og-blog-9.png',
+  'google-ads-agency-visakhapatnam-2026': '/og-blog-10.png',
+  'website-design-visakhapatnam-2026': '/og-blog-11.png',
+  'whatsapp-marketing-vizag-2026': '/og-blog-12.png',
+  'digital-marketing-visakhapatnam-2026': '/og-blog-13.png',
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
