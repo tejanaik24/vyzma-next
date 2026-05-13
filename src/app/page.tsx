@@ -1,11 +1,8 @@
 import Hero from "@/components/sections/Hero";
-import HowWeWork from "@/components/sections/HowWeWork";
-import ServicesCarousel from "@/components/sections/ServicesCarousel";
 import ContactForm from "@/components/sections/ContactForm";
 import Footer from "@/components/sections/Footer";
 import {
   FeaturesTimeline,
-  ScrollingFeatures,
   Testimonials,
   ScrollHero,
 } from "@/components/sections/ClientSections";
@@ -42,9 +39,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <ServicesCarousel />
-      <ScrollingFeatures />
-      <HowWeWork />
       <FeaturesTimeline />
       <Testimonials />
       <ScrollHero />
