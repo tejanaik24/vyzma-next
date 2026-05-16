@@ -26,7 +26,7 @@ export const SERVICES: Service[] = [
     slug: "ai-chatbots",
     title: "AI Chatbots",
     tag: "AI Agents",
-    summary: "Intelligent conversational agents powered by GPT-4o & Claude for 24/7 customer support",
+    summary: "Deploy AI chatbots powered by GPT-4o & Claude for 24/7 customer support, WhatsApp automation, and instant lead qualification for your business.",
     description: "Transform your customer support with AI-powered chatbots that understand context, handle complex queries, and deliver personalized responses round the clock. Our chatbots integrate seamlessly with your existing systems to provide instant, accurate answers while escalating to human agents when needed.",
     accentColor: "#8B5CF6",
     features: [
@@ -53,7 +53,7 @@ export const SERVICES: Service[] = [
     slug: "workflow-automation",
     title: "Workflow Automation",
     tag: "Operations",
-    summary: "Automate repetitive tasks and business processes with AI-powered workflows",
+    summary: "Automate repetitive tasks and business processes with AI-powered workflows — connect your CRM, email, documents, and 500+ apps without any coding.",
     description: "Eliminate manual, repetitive tasks that drain your team's productivity. Our AI-powered workflow automation handles data entry, document processing, approvals, and cross-system syncing — freeing your team to focus on high-value work. Built on n8n or Make.com with custom AI enhancements for intelligent decision-making.",
     accentColor: "#10B981",
     features: [
@@ -80,7 +80,7 @@ export const SERVICES: Service[] = [
     slug: "seo-aeo-geo",
     title: "SEO & AI Search",
     tag: "Organic Growth",
-    summary: "Rank higher on Google & get cited by AI assistants like ChatGPT, Claude & Perplexity",
+    summary: "Rank higher on Google and get cited by AI assistants like ChatGPT, Claude & Perplexity. SEO, AEO & GEO services for Indian businesses in Vizag & Bangalore.",
     description: "Traditional SEO meets AI search optimization. We optimize for Google while building your presence in AI-generated answers — ensuring ChatGPT, Claude, and Perplexity cite your business. Includes technical SEO, content strategy, and the emerging AEO/GEO practices that define the future of search.",
     accentColor: "#F59E0B",
     features: [
@@ -107,7 +107,7 @@ export const SERVICES: Service[] = [
     slug: "voice-ai",
     title: "Voice AI",
     tag: "Speech AI",
-    summary: "Natural voice assistants with real-time speech recognition and synthesis",
+    summary: "Deploy natural voice AI agents for customer calls and IVR automation — real-time speech recognition in Hindi, English, Telugu & 50+ languages.",
     description: "Deploy natural-sounding voice AI agents for customer calls, IVR systems, and real-time conversations. Our voice AI understands context, handles accents, and responds with human-like speech synthesis. Perfect for customer support automation, appointment scheduling, and sales qualification.",
     accentColor: "#EC4899",
     features: [
@@ -134,7 +134,7 @@ export const SERVICES: Service[] = [
     slug: "custom-ai",
     title: "Custom AI Development",
     tag: "AI Engineering",
-    summary: "Bespoke AI solutions built for your specific business requirements",
+    summary: "Bespoke AI solutions for your exact needs — custom ML models, RAG systems, fine-tuned LLMs, and full-cycle AI product development from concept to deployment.",
     description: "When off-the-shelf AI won't work, we build custom solutions. From proprietary ML models to AI-powered products, our team engineers bespoke AI systems designed for your unique requirements. Full-cycle development from concept to deployment with ongoing support.",
     accentColor: "#3B82F6",
     features: [
@@ -161,7 +161,7 @@ export const SERVICES: Service[] = [
     slug: "website-design",
     title: "Website Design",
     tag: "Web Development",
-    summary: "Modern, fast websites built with Next.js and AI integration",
+    summary: "Modern, high-performance websites built with Next.js — sub-2 second loads, SEO-ready architecture, and AI integrations for Indian businesses.",
     description: "We build high-performance websites that load instantly, rank well, and convert visitors. From simple landing pages to complex web applications with AI integrations — our sites are built for growth. Next.js powered with server-side rendering for SEO and speed.",
     accentColor: "#06B6D4",
     features: [
@@ -188,7 +188,7 @@ export const SERVICES: Service[] = [
     slug: "google-ads",
     title: "Google Ads",
     tag: "PPC Advertising",
-    summary: "Data-driven Google Ads campaigns that maximize ROAS",
+    summary: "Data-driven Google Ads management that maximises ROAS — search, display, shopping, and landing page optimisation for businesses across India.",
     description: "We manage Google Ads campaigns that deliver real business results. From search to display to shopping, our data-driven approach optimizes for conversions — not just clicks. Includes landing page optimization and continuous A/B testing.",
     accentColor: "#4285F4",
     features: [
@@ -215,7 +215,7 @@ export const SERVICES: Service[] = [
     slug: "meta-ads",
     title: "Meta Ads",
     tag: "Social Advertising",
-    summary: "Facebook & Instagram ads that build brand and drive conversions",
+    summary: "Facebook & Instagram ads that build brand and drive conversions — creative development, audience targeting, and weekly optimisation for consistent results.",
     description: "We create Meta advertising strategies that work for both brand building and direct response. From creative development to audience targeting to retargeting — our approach combines creative excellence with data optimization. Includes ad creative development and video production.",
     accentColor: "#0EA5E9",
     features: [

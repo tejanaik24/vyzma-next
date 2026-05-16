@@ -1,0 +1,28 @@
+# Vyzma AI
+
+> India's Premier AI Agency — AI chatbots, workflow automation, answer engine optimisation, and performance marketing for businesses in Bangalore & Visakhapatnam.
+
+Vyzma AI builds intelligent systems that help Indian businesses grow faster. We combine cutting-edge AI with deep local market knowledge to deliver measurable results.
+
+## Services
+
+- [AI Chatbots](https://vyzma.in/services/ai-chatbots): GPT-4o & Claude-powered conversational agents for 24/7 customer support, WhatsApp automation, and lead qualification
+- [Workflow Automation](https://vyzma.in/services/workflow-automation): AI-powered automation connecting CRM, email, documents, and 500+ business apps
+- [SEO & AI Search (AEO/GEO)](https://vyzma.in/services/seo-aeo-geo): Google rankings plus citations in ChatGPT, Perplexity, Gemini, and Claude
+- [Voice AI](https://vyzma.in/services/voice-ai): Natural voice agents for customer calls, IVR replacement, and multilingual support (Hindi, Telugu, English)
+- [Custom AI Development](https://vyzma.in/services/custom-ai): Bespoke ML models, RAG systems, and fine-tuned LLMs for specific business requirements
+- [Website Design](https://vyzma.in/services/website-design): Next.js websites with sub-2 second loads, SEO foundations, and AI integrations
+- [Google Ads](https://vyzma.in/services/google-ads): Data-driven PPC campaigns optimised for ROAS across search, display, and shopping
+- [Meta Ads](https://vyzma.in/services/meta-ads): Facebook & Instagram advertising with creative development and audience targeting
+
+## Blog
+
+Expert articles on AI automation, SEO, digital marketing, and business growth for Indian businesses: https://vyzma.in/blog
+
+## Contact
+
+- Website: https://vyzma.in
+- Email: vyzmaai.in@gmail.com
+- Phone: +91-8886720908
+- WhatsApp: https://wa.me/8886720908
+- Offices: Bangalore & Visakhapatnam, India
