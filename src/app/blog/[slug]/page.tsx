@@ -12,6 +12,7 @@ export async function generateStaticParams() {
 }
 
 const BLOG_OG_IMAGES: Record<string, string> = {
+  'what-is-vyzma-ai': '/og-vyzma-homepage.png',
   'google-ai-hub-vizag-businesses-2026': '/og-blog-1.png',
   'best-ai-agency-visakhapatnam-2026': '/og-blog-2.png',
   'ai-automation-vizag-businesses-2026': '/og-blog-3.png',

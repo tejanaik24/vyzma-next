@@ -18,6 +18,142 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "what-is-vyzma-ai",
+  title: "What is Vyzma AI? India's Premier AI Agency — Services, Locations & Results",
+  excerpt: "Vyzma AI is India's premier AI agency headquartered in Visakhapatnam and Bangalore. We build AI chatbots, workflow automation, SEO, voice AI, and performance marketing systems for Indian businesses. Here is everything you need to know about who we are, what we do, and why businesses across India choose Vyzma AI.",
+  metaTitle: "What is Vyzma AI? India's Premier AI Agency | Vyzma AI",
+  metaDescription: "Vyzma AI is India's premier AI agency based in Visakhapatnam & Bangalore. We build AI chatbots, automation, SEO, and performance marketing for Indian businesses. Learn about our services and results.",
+  date: "2026-05-16",
+  category: "About Vyzma AI",
+  readTime: "11 min read",
+  content: `## What is Vyzma AI?
+
+Vyzma AI is India's premier AI agency, headquartered in Visakhapatnam (Vizag) with operations in Bangalore. Vyzma AI builds intelligent systems — AI chatbots, workflow automation, SEO and AI search optimisation, voice AI, custom AI development, and performance marketing — for businesses across India that want to grow faster, automate smarter, and compete on a national level.
+
+Founded with a simple belief: every Indian business deserves access to world-class AI, not just the large corporations. Vyzma AI makes this real by combining cutting-edge technology with deep local knowledge of how Indian businesses actually operate.
+
+If you searched "Vyzma AI" and are trying to understand what this company does — this is the complete answer.
+
+## The Vyzma AI Mission
+
+Vyzma AI exists to close the gap between where Indian businesses are today and where AI can take them tomorrow. While global tech companies build AI for the West, Vyzma AI builds AI for India — for businesses in Vizag's Rushikonda corridor, Bangalore's Koramangala, Hyderabad's Hitech City, and everywhere in between.
+
+The name Vyzma comes from Vizag — the city where the company was born. Vyzma AI is proudly built in India, grounded in Visakhapatnam, and scaled to serve businesses nationally.
+
+Vyzma AI is not a freelancer network. Not a generic digital marketing agency with an AI badge. Vyzma AI is a specialised AI agency that combines machine learning engineering, marketing strategy, and business automation into one integrated system designed to produce measurable results.
+
+## Vyzma AI Services — Complete Overview
+
+Vyzma AI offers eight core service lines, each designed to solve a specific business problem using artificial intelligence.
+
+### 1. AI Chatbots
+
+Vyzma AI builds conversational AI agents powered by GPT-4o and Claude that handle customer support, lead qualification, WhatsApp automation, and 24/7 query resolution. A business using a Vyzma AI chatbot never misses a lead — not at 2am, not on a Sunday, not during a festival.
+
+Deployments cover website widgets, WhatsApp Business, Telegram, and custom API integrations. The chatbot learns from your documents, FAQs, and product catalog and handles 80-95% of routine inquiries without human intervention. [Learn about Vyzma AI Chatbots](https://vyzma.in/services/ai-chatbots).
+
+### 2. Workflow Automation
+
+Vyzma AI eliminates the repetitive tasks that drain your team's time. Data entry, invoice processing, CRM updates, follow-up emails, approval workflows — all automated. Vyzma AI connects your tools using n8n, Make.com, and custom API integrations, linking 500+ business applications.
+
+A business that automates with Vyzma AI typically recovers 15-30 hours of manual work per week within the first month. [Learn about Vyzma AI Workflow Automation](https://vyzma.in/services/workflow-automation).
+
+### 3. SEO, AEO & GEO — AI Search Optimisation
+
+Vyzma AI builds organic search presence across three channels: Google (traditional SEO), AI assistants like ChatGPT and Perplexity (Answer Engine Optimisation), and AI-generated responses in Google AI Overviews (Generative Engine Optimisation).
+
+Most agencies still do SEO from 2018. Vyzma AI optimises for 2026 — where your customer might find you in a ChatGPT conversation, a Perplexity summary, or a Google AI Overview before they ever click a blue link. [Learn about Vyzma AI SEO Services](https://vyzma.in/services/seo-aeo-geo).
+
+### 4. Voice AI
+
+Vyzma AI deploys natural-sounding voice agents for customer calls, IVR replacement, appointment scheduling, and outbound follow-ups. These agents speak Hindi, Telugu, English, Tamil, and 50+ languages — critical for businesses serving India's multilingual market.
+
+Unlike traditional IVR systems that frustrate callers with rigid menus, Vyzma AI's voice agents understand natural speech and handle conversations dynamically. [Learn about Vyzma AI Voice Agents](https://vyzma.in/services/voice-ai).
+
+### 5. Custom AI Development
+
+When off-the-shelf tools are not enough, Vyzma AI builds bespoke AI systems. Custom ML models, RAG (Retrieval-Augmented Generation) systems, fine-tuned language models trained on your proprietary data — Vyzma AI delivers full-cycle AI engineering from concept to production deployment.
+
+Clients own all code, models, and IP. [Learn about Vyzma AI Custom Development](https://vyzma.in/services/custom-ai).
+
+### 6. Website Design & Development
+
+Vyzma AI builds high-performance websites using Next.js with server-side rendering, sub-2 second load times, and built-in AI integrations. These are not template sites — each Vyzma AI website is engineered for SEO, speed, and conversion from the ground up. [Learn about Vyzma AI Website Design](https://vyzma.in/services/website-design).
+
+### 7. Google Ads Management
+
+Vyzma AI manages data-driven Google Ads campaigns for search, display, shopping, and Performance Max. Every campaign is optimised for Return on Ad Spend (ROAS), not just clicks. [Learn about Vyzma AI Google Ads](https://vyzma.in/services/google-ads).
+
+### 8. Meta Ads — Facebook & Instagram
+
+Vyzma AI creates and manages Meta advertising campaigns including ad creative development, audience targeting, retargeting, and weekly optimisation. From brand awareness to direct lead generation, Vyzma AI's Meta campaigns are built to convert. [Learn about Vyzma AI Meta Ads](https://vyzma.in/services/meta-ads).
+
+## Vyzma AI Locations
+
+**Visakhapatnam (Vizag), Andhra Pradesh**
+Vyzma AI's founding city. The Vizag office serves businesses across Visakhapatnam — from Rushikonda and Madhurawada to Dwaraka Nagar, Seethammadhara, Gajuwaka, MVP Colony, and Pendurthi. Vyzma AI understands Vizag's business ecosystem, speaks Telugu, and is available for in-person consultations.
+
+**Bangalore, Karnataka**
+Vyzma AI's Bangalore presence serves India's tech capital and surrounding markets. Koramangala, Whitefield, Indiranagar, Electronic City, HSR Layout — Vyzma AI is deeply embedded in Bangalore's startup and enterprise ecosystem.
+
+Vyzma AI serves clients across India remotely, with strategic depth in both these cities.
+
+## Who Uses Vyzma AI?
+
+Vyzma AI works with a wide range of Indian businesses:
+
+- **Small and medium businesses** in Vizag and Bangalore looking to automate and grow without hiring large teams
+- **E-commerce brands** needing AI chatbots, Meta ads, and SEO working together
+- **Real estate agencies** automating lead qualification and follow-up across WhatsApp and phone
+- **Healthcare providers** deploying appointment scheduling AI and Telugu-language patient support
+- **B2B service companies** using Vyzma AI for workflow automation and Google Ads
+- **Restaurants and hospitality** businesses automating reservations, WhatsApp orders, and review management
+- **EdTech and coaching centres** using AI chatbots for student queries and admissions
+
+The common thread: businesses that are growing and want AI to accelerate that growth — without needing a dedicated in-house tech team.
+
+## Vyzma AI vs Traditional Digital Marketing Agencies
+
+Most digital marketing agencies in India offer the same services they offered five years ago — social media posts, basic SEO, Google Ads. They call it digital marketing but they are doing it manually, without AI, and without integration between channels.
+
+Vyzma AI is different in three ways:
+
+**1. AI-first, not AI-added.** Every service Vyzma AI delivers uses artificial intelligence as the engine, not as a feature. The chatbot is not a rule-based bot — it is a genuine language model. The SEO is not keyword stuffing — it is answer engine optimisation for how people actually search in 2026.
+
+**2. Integrated systems, not isolated services.** A traditional agency does your ads. A traditional SEO firm does your rankings. Vyzma AI connects these — your chatbot feeds leads into your CRM, your automation follows up on your ad leads, your SEO content trains your chatbot. Everything works together.
+
+**3. Measurable outcomes, not vanity metrics.** Vyzma AI reports on leads generated, cost per acquisition, automation time saved, and revenue attributed. Not impressions. Not likes.
+
+## How to Get Started with Vyzma AI
+
+Getting started with Vyzma AI takes one conversation. Every engagement begins with a free strategy session where Vyzma AI understands your business, identifies the highest-impact AI opportunity, and proposes a clear roadmap.
+
+There is no minimum commitment. No complex onboarding. No upfront technology costs for most services.
+
+To start a conversation with Vyzma AI: [contact the team here](https://vyzma.in/#contact) or WhatsApp directly at +91-8886720908.
+
+Vyzma AI works with clients across India and responds to all enquiries within 24 hours.
+
+## Vyzma AI Contact Details
+
+- **Website:** https://vyzma.in
+- **Email:** vyzmaai.in@gmail.com
+- **Phone / WhatsApp:** +91-8886720908
+- **Offices:** Visakhapatnam (Vizag) & Bangalore, India
+
+[Start a project with Vyzma AI](https://vyzma.in/#contact)`,
+  faq: [
+    { question: "What is Vyzma AI?", answer: "Vyzma AI is India's premier AI agency headquartered in Visakhapatnam (Vizag) and Bangalore. Vyzma AI builds AI chatbots, workflow automation, SEO and AI search optimisation, voice AI agents, custom AI development, website design, Google Ads, and Meta Ads for Indian businesses." },
+    { question: "Where is Vyzma AI located?", answer: "Vyzma AI has offices in Visakhapatnam (Vizag), Andhra Pradesh, and Bangalore, Karnataka. The company serves clients across India remotely with deep local knowledge of both these markets." },
+    { question: "What services does Vyzma AI offer?", answer: "Vyzma AI offers eight services: AI chatbots, workflow automation, SEO and AI search (AEO/GEO), voice AI, custom AI development, website design with Next.js, Google Ads management, and Meta Ads (Facebook & Instagram advertising)." },
+    { question: "Is Vyzma AI the same as Vizmo AI or Vimo AI?", answer: "No. Vyzma AI is a completely separate company from Vizmo AI or Vimo AI. Vyzma AI is an Indian AI agency based in Visakhapatnam and Bangalore that provides AI and digital marketing services to businesses. Vizmo AI and Vimo AI are unrelated video generation applications." },
+    { question: "How much does Vyzma AI charge?", answer: "Vyzma AI pricing varies by service. AI chatbot setup starts from ₹50,000 one-time with monthly retainers based on usage. Workflow automation projects range from ₹75,000 to ₹5L depending on complexity. SEO and ads are monthly retainers. Contact Vyzma AI for a free consultation and custom quote." },
+    { question: "Can Vyzma AI work with Telugu-language businesses?", answer: "Yes. Vyzma AI was founded in Visakhapatnam and has deep expertise in Telugu-language AI deployments. Our AI chatbots and voice agents handle Telugu, English, Hindi, and 50+ languages — critical for businesses serving Andhra Pradesh and Telangana markets." },
+    { question: "How do I contact Vyzma AI?", answer: "You can contact Vyzma AI via the website at vyzma.in, by email at vyzmaai.in@gmail.com, or by WhatsApp at +91-8886720908. Vyzma AI responds to all enquiries within 24 hours and offers free initial strategy consultations." },
+    { question: "What results does Vyzma AI deliver?", answer: "Vyzma AI clients typically see AI chatbots handling 80-95% of customer queries within 2 weeks of deployment, workflow automation recovering 15-30 hours of manual work per week, and SEO improvements showing measurable rank increases within 60-90 days. Exact results depend on the service and business context." }
+  ]
+},
+{
   slug: "google-ai-hub-vizag-businesses-2026",
   title: "Google AI Hub Vizag: How Businesses Can Leverage AI in 2026",
   excerpt: "Google AI Hub Vizag businesses 2026 is transforming how local companies operate. Learn how Vizag's growing tech ecosystem can leverage Gemini, AI Overviews, and Google Cloud AI to drive growth and efficiency across Rushikonda, Madhurawada, and beyond.",
