@@ -273,25 +273,25 @@ function ListItem({
 const serviceLinks: LinkItem[] = [
   {
     title: 'AI Chatbots',
-    href: '#contact',
+    href: '/services/ai-chatbots',
     description: 'Conversational AI for support, leads & sales — 24/7',
     icon: Bot,
   },
   {
     title: 'Workflow Automation',
-    href: '#contact',
+    href: '/services/workflow-automation',
     description: 'Connect tools, eliminate manual tasks end-to-end',
     icon: Workflow,
   },
   {
     title: 'Answer Engine Optimisation',
-    href: '#contact',
+    href: '/services/seo-aeo-geo',
     description: 'Rank in ChatGPT, Perplexity & Gemini results',
     icon: Search,
   },
   {
     title: 'R&D Systems',
-    href: '#contact',
+    href: '/services/custom-ai',
     description: 'Custom AI models & proprietary data pipelines',
     icon: FlaskConical,
   },
@@ -324,7 +324,7 @@ const companyLinks: LinkItem[] = [
   },
   {
     title: 'About Vyzma AI',
-    href: '#contact',
+    href: '/about',
     description: 'Bangalore & Vizag — building intelligent systems',
     icon: Users,
   },
@@ -336,7 +336,7 @@ const companyLinks: LinkItem[] = [
   },
   {
     title: 'Contact Us',
-    href: '#contact',
+    href: '/contact',
     description: 'vyzmaai.in@gmail.com · Bangalore · Vizag',
     icon: Mail,
   },
@@ -351,12 +351,12 @@ const companyLinks: LinkItem[] = [
 const companyLinks2: LinkItem[] = [
   {
     title: 'Privacy Policy',
-    href: '#contact',
+    href: '/privacy',
     icon: Shield,
   },
   {
     title: 'Terms of Service',
-    href: '#contact',
+    href: '/terms',
     icon: FileText,
   },
   {

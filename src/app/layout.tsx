@@ -9,7 +9,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Vyzma AI",
   url: "https://vyzma.in",
-  logo: "https://vyzma.in/vyzma-logo.png",
+  logo: "https://vyzma.in/vyzma-logo.svg",
   description: "Vyzma AI builds AI chatbots, workflow automation, answer engine strategies, and R&D systems for businesses in India.",
   contactPoint: {
     "@type": "ContactPoint",
@@ -77,6 +77,9 @@ export const metadata: Metadata = {
   title: "Vyzma AI — India's Premier AI Agency",
   description:
     "Vyzma AI builds AI chatbots, workflow automation, answer engine strategies, and R&D systems that help businesses grow faster. Based in Bangalore & Vizag.",
+  icons: {
+    icon: "https://vyzma.in/favicon.svg",
+  },
   alternates: {
     canonical: "https://vyzma.in",
     languages: {
