@@ -1,16 +1,55 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Vyzma AI",
-  description: "Get in touch with Vyzma AI for AI chatbot, automation, and AI development services.",
+  title: "Contact Us | Vyzma AI — AI Chatbots & Automation",
+  description: "Get in touch with Vyzma AI for AI chatbots, workflow automation, SEO, and custom AI development. Based in Bangalore & Vizag. Free consultation.",
+  alternates: {
+    canonical: "https://vyzma.in/contact",
+  },
+  robots: "index, follow",
+  openGraph: {
+    title: "Contact Vyzma AI — Start Your AI Journey",
+    description: "Ready to automate your business? Contact Vyzma AI for AI chatbots, workflow automation, SEO, and custom AI solutions. Free strategy session.",
+    url: "https://vyzma.in/contact",
+    siteName: "Vyzma AI",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://vyzma.in/og-vyzma-homepage.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Vyzma AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Vyzma AI — Start Your AI Journey",
+    description: "Ready to automate your business? Contact Vyzma AI. Free strategy session.",
+    images: ["https://vyzma.in/og-vyzma-homepage.png"],
+  },
+};
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact Vyzma AI",
+  description: "Contact Vyzma AI for AI chatbot, automation, and AI development services.",
+  url: "https://vyzma.in/contact",
 };
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen py-24 md:py-32">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-2xl">
-          <h1 className="mb-6 text-4xl font-bold md:text-5xl">Contact Us</h1>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+      <main className="min-h-screen py-24 md:py-32">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mx-auto max-w-2xl">
+            <h1 className="mb-6 text-4xl font-bold md:text-5xl">Contact Us</h1>
           <p className="mb-8 text-lg text-neutral-400">
             Ready to get started with AI? Let&apos;s talk about your project.
           </p>
@@ -71,5 +110,6 @@ export default function ContactPage() {
         </div>
       </div>
     </main>
+    </>
   );
 }

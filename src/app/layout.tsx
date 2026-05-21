@@ -23,7 +23,11 @@ const organizationSchema = {
     addressRegion: "Karnataka",
     addressCountry: "IN",
   },
-  sameAs: [],
+  sameAs: [
+    "https://www.linkedin.com/company/vyzma-ai",
+    "https://twitter.com/vyzmaai",
+    "https://www.instagram.com/vyzmaai/"
+  ],
 };
 
 const localBusinessSchema = {
@@ -43,6 +47,21 @@ const localBusinessSchema = {
   priceRange: "₹₹–₹₹₹",
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Vyzma AI",
+  url: "https://vyzma.in",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://vyzma.in/search?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -59,7 +78,10 @@ export const metadata: Metadata = {
   description:
     "Vyzma AI builds AI chatbots, workflow automation, answer engine strategies, and R&D systems that help businesses grow faster. Based in Bangalore & Vizag.",
   alternates: {
-    canonical: "/",
+    canonical: "https://vyzma.in",
+    languages: {
+      "en-IN": "https://vyzma.in",
+    },
   },
   robots: "index, follow",
   openGraph: {
@@ -107,6 +129,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-XCZLBPQYX6" strategy="afterInteractive" />
         <Script id="ga4" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XCZLBPQYX6');`}</Script>

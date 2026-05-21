@@ -58,7 +58,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     notFound();
   }
 
-  const jsonLd = {
+  const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: service.faqs.map((faq) => ({
@@ -71,11 +71,42 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     })),
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://vyzma.in" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://vyzma.in/services" },
+      { "@type": "ListItem", position: 3, name: service.title, item: `https://vyzma.in/services/${service.slug}` },
+    ],
+  };
+
+  const serviceLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${service.title} Services | Vyzma AI`,
+    description: service.summary,
+    provider: {
+      "@type": "Organization",
+      name: "Vyzma AI",
+      url: "https://vyzma.in",
+    },
+    areaServed: ["Bangalore", "Visakhapatnam", "India"],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
       />
       <main className="min-h-screen">
         {/* Hero Section */}

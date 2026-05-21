@@ -86,14 +86,19 @@ const footerColumns = [
     heading: "Services",
     content: (
       <ul className="flex flex-col gap-2.5">
-        {["AI Chatbots", "Workflow Automation", "Answer Engines", "R&D Systems"].map(
+        {[
+          { label: "AI Chatbots", href: "/services/ai-chatbots" },
+          { label: "Workflow Automation", href: "/services/workflow-automation" },
+          { label: "Answer Engines", href: "/services/seo-aeo-geo" },
+          { label: "R&D Systems", href: "/services/custom-ai" },
+        ].map(
           (s) => (
-            <li key={s}>
+            <li key={s.label}>
               <a
-                href="#"
+                href={s.href}
                 className="text-sm text-white/45 hover:text-white transition-colors duration-200"
               >
-                {s}
+                {s.label}
               </a>
             </li>
           )
@@ -139,7 +144,9 @@ const footerColumns = [
         <div className="flex gap-3 mt-1">
           {/* LinkedIn */}
           <a
-            href="#"
+            href="https://www.linkedin.com/company/vyzma-ai"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-white/40 hover:border-[#007BFF] hover:text-[#007BFF] transition-colors duration-200"
           >
@@ -149,7 +156,9 @@ const footerColumns = [
           </a>
           {/* Twitter / X */}
           <a
-            href="#"
+            href="https://twitter.com/vyzmaai"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Twitter"
             className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-white/40 hover:border-[#007BFF] hover:text-[#007BFF] transition-colors duration-200"
           >
@@ -159,7 +168,9 @@ const footerColumns = [
           </a>
           {/* Instagram */}
           <a
-            href="#"
+            href="https://www.instagram.com/vyzmaai/"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Instagram"
             className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-white/40 hover:border-[#007BFF] hover:text-[#007BFF] transition-colors duration-200"
           >
