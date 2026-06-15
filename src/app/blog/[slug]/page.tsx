@@ -26,6 +26,7 @@ const BLOG_OG_IMAGES: Record<string, string> = {
   'website-design-visakhapatnam-2026': '/og-blog-11.png',
   'whatsapp-marketing-vizag-2026': '/og-blog-12.png',
   'digital-marketing-visakhapatnam-2026': '/og-blog-13.png',
+  'seo-is-dead-in-india-ai-overviews-2026': '/og-blog-14.png',
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -185,7 +186,13 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,
-    author: { '@type': 'Organization', name: 'Vyzma AI' },
+    author: {
+      '@type': 'Person',
+      name: 'Teja Naik',
+      jobTitle: 'Founder',
+      worksFor: { '@type': 'Organization', name: 'Vyzma AI', url: 'https://vyzma.in' },
+      url: 'https://vyzma.in/about',
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Vyzma AI',
@@ -273,10 +280,17 @@ export default async function BlogPostPage({ params }: Props) {
               {renderContent(post.content)}
             </div>
 
-            <div className="mt-12 border-t border-white/[0.06] pt-8 text-center">
-              <p className="mb-2 text-sm text-white/40">Published by</p>
-              <p className="font-semibold text-white">Vyzma AI</p>
-              <p className="text-xs text-white/30">India&apos;s Premier AI Agency · Bangalore &amp; Vizag</p>
+            <div className="mt-12 border-t border-white/[0.06] pt-8">
+              <div className="flex items-center gap-4">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#007BFF]/10 text-xl font-bold text-[#007BFF]">
+                  TN
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Teja Naik</p>
+                  <p className="text-sm text-white/50">Founder, Vyzma AI · India&apos;s Premier AI Agency</p>
+                  <p className="mt-1 text-xs text-white/30">Building AI solutions for Indian businesses in Vizag &amp; Bangalore</p>
+                </div>
+              </div>
             </div>
           </div>
         </article>

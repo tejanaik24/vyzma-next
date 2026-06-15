@@ -38,6 +38,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  const cities = ['mumbai', 'delhi', 'bangalore', 'hyderabad', 'chennai', 'kolkata', 'pune', 'ahmedabad'];
+  for (const city of cities) {
+    entries.push({
+      url: `https://vyzma.in/${city}`,
+      lastModified: new Date('2026-06-04'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    });
+  }
+
   entries.push(
     {
       url: 'https://vyzma.in/about',
