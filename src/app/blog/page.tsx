@@ -10,6 +10,20 @@ export const metadata: Metadata = {
     title: 'Blog | Vyzma AI',
     description: 'Insights on AI-powered growth for Indian businesses.',
     url: 'https://vyzma.in/blog',
+    images: [
+      {
+        url: 'https://vyzma.in/og-blog.png',
+        width: 1200,
+        height: 630,
+        alt: 'Vyzma AI Blog',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Vyzma AI',
+    description: 'Insights on AI-powered growth for Indian businesses.',
+    images: ['https://vyzma.in/og-blog.png'],
   },
 };
 

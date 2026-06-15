@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://vyzma.in/og-vyzma-homepage.png",
+        url: "https://vyzma.in/og-about.png",
         width: 1200,
         height: 630,
         alt: "About Vyzma AI",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Vyzma AI — India's Premier AI Agency",
     description: "AI chatbots, automation, SEO, and custom AI development — built in India, competing globally.",
-    images: ["https://vyzma.in/og-vyzma-homepage.png"],
+    images: ["https://vyzma.in/og-about.png"],
   },
 };
 

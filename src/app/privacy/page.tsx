@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     siteName: "Vyzma AI",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://vyzma.in/og-privacy.png",
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy | Vyzma AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Vyzma AI",
+    description: "How Vyzma AI collects, uses, and protects your personal information.",
+    images: ["https://vyzma.in/og-privacy.png"],
   },
 };
 

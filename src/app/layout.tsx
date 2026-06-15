@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/Header";
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://vyzma.in/#organization",
   name: "Vyzma AI",
   url: "https://vyzma.in",
   logo: "https://vyzma.in/vyzma-logo.svg",
@@ -26,16 +27,18 @@ const organizationSchema = {
   sameAs: [
     "https://www.linkedin.com/company/vyzma-ai",
     "https://twitter.com/vyzmaai",
-    "https://www.instagram.com/vyzmaai/"
+    "https://www.instagram.com/vyzmaai/",
   ],
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Vyzma AI Agency",
+  "@id": "https://vyzma.in/#localbusiness",
+  name: "Vyzma AI",
   url: "https://vyzma.in",
   telephone: "+91-8886720908",
+  image: "https://vyzma.in/og-vyzma-homepage.png",
   description: "AI agency specialising in chatbots, workflow automation, and answer engine optimisation for Indian businesses.",
   areaServed: ["Bangalore", "Hyderabad", "Vizag", "India"],
   address: {
@@ -44,12 +47,13 @@ const localBusinessSchema = {
     addressRegion: "Karnataka",
     addressCountry: "IN",
   },
-  priceRange: "₹₹–₹₹₹",
+  priceRange: "INR",
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://vyzma.in/#website",
   name: "Vyzma AI",
   url: "https://vyzma.in",
   potentialAction: {

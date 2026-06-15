@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     siteName: "Vyzma AI",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://vyzma.in/og-terms.png",
+        width: 1200,
+        height: 630,
+        alt: "Terms of Service | Vyzma AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Vyzma AI",
+    description: "Terms governing your use of Vyzma AI's agency services.",
+    images: ["https://vyzma.in/og-terms.png"],
   },
 };
 

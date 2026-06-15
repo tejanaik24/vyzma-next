@@ -36,6 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.metaTitle,
     description: post.metaDescription,
+    alternates: {
+      canonical: `https://vyzma.in/blog/${post.slug}`,
+    },
     robots: 'index, follow',
     openGraph: {
       title: post.title,
@@ -173,6 +176,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
 
+  const postOgImage = BLOG_OG_IMAGES[slug];
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -185,8 +190,10 @@ export default async function BlogPostPage({ params }: Props) {
       '@type': 'Organization',
       name: 'Vyzma AI',
       url: 'https://vyzma.in',
+      logo: { '@type': 'ImageObject', url: 'https://vyzma.in/logo.png' },
     },
     url: `https://vyzma.in/blog/${post.slug}`,
+    ...(postOgImage && { image: `https://vyzma.in${postOgImage}` }),
   };
 
   const faqSchema = {
