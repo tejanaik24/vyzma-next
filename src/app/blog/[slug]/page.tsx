@@ -27,6 +27,15 @@ const BLOG_OG_IMAGES: Record<string, string> = {
   'whatsapp-marketing-vizag-2026': '/og-blog-12.png',
   'digital-marketing-visakhapatnam-2026': '/og-blog-13.png',
   'seo-is-dead-in-india-ai-overviews-2026': '/og-blog-14.png',
+  'top-website-building-companies-in-vizag': '/og-blog-15.png',
+  'ecommerce-website-design-cost-in-india': '/og-blog-16.png',
+  'b2b-lead-generation-with-ai-chatbots': '/og-blog-17.png',
+  'startup-ai-stack-guide-2026': '/og-blog-18.png',
+  'nextjs-vs-wordpress-which-is-better': '/og-blog-19.png',
+  'website-design-company-in-visakhapatnam': '/og-blog-20.png',
+  'web-development-agency-visakhapatnam': '/og-blog-21.png',
+  'web-design-for-real-estate': '/og-blog-22.png',
+  'how-much-does-it-cost-to-build-a-website': '/og-blog-23.png',
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
