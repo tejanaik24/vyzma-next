@@ -32,6 +32,17 @@ Vyzma AI builds intelligent systems that help Indian businesses grow faster. We 
 - [WhatsApp Marketing Vizag 2026: The Complete Guide to Growing Your Business with AI-Powered Messaging](https://vyzma.in/blog/whatsapp-marketing-vizag-2026)
 - [Digital Marketing Visakhapatnam 2026: Why Word of Mouth Is Costing You Customers](https://vyzma.in/blog/digital-marketing-visakhapatnam-2026)
 - [SEO is Dead in India: How to Rank in Google AI Overviews & ChatGPT Search in 2026](https://vyzma.in/blog/seo-is-dead-in-india-ai-overviews-2026)
+<!-- E16-E24: Add these when blog posts are added to blog-data.ts
+- [Top Website Building Companies in Vizag 2026 — Complete Guide](https://vyzma.in/blog/top-website-building-companies-in-vizag)
+- [Ecommerce Website Design Cost in India 2026 — Complete Pricing Guide](https://vyzma.in/blog/ecommerce-website-design-cost-in-india)
+- [B2B Lead Generation with AI Chatbots — The Complete 2026 Playbook](https://vyzma.in/blog/b2b-lead-generation-with-ai-chatbots)
+- [The Complete Startup AI Stack Guide 2026](https://vyzma.in/blog/startup-ai-stack-guide-2026)
+- [Next.js vs WordPress: Which Is Better for SEO & Speed in 2026?](https://vyzma.in/blog/nextjs-vs-wordpress-which-is-better)
+- [Website Design Company in Visakhapatnam: How to Choose the Right Partner](https://vyzma.in/blog/website-design-company-in-visakhapatnam)
+- [Best Web Development Agency in Visakhapatnam 2026](https://vyzma.in/blog/web-development-agency-visakhapatnam)
+- [Web Design for Real Estate in Vizag 2026: Why Property Businesses Need Modern Websites](https://vyzma.in/blog/web-design-for-real-estate)
+- [How Much Does It Cost to Build a Website in India? Complete Pricing Guide 2026](https://vyzma.in/blog/how-much-does-it-cost-to-build-a-website)
+-->
 
 ## City Hubs
 
